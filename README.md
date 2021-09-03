@@ -2,19 +2,20 @@
 A general model for training and doing k fold cross validation
 
 ## usage
-just download and import
+just download trainer.py and import
 ```
-
+from trainer import torch_trainer
 ```
 ## example
-see notebook:
+see notebook: https://github.com/1tangerine1day/torch-trainer/blob/main/example.ipynb
 
 ```
 trainer = torch_trainer()
-# torch calss
+
+# torch class
 trainer.set_model_cls(spam_classifer1)
 
-# parameter for your model
+# parameter for build your model
 trainer.set_model_parameter({"pretrain_model":"bert-base-uncased", "drop":0.3})
 ```
 ## training
